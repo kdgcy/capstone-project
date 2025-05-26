@@ -10,6 +10,7 @@ import androidx.compose.foundation.layout.padding
 import androidx.compose.material3.Button
 import androidx.compose.material3.OutlinedTextField
 import androidx.compose.material3.Text
+import androidx.compose.material3.TextButton
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
@@ -20,6 +21,7 @@ import androidx.compose.ui.text.input.PasswordVisualTransformation
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import androidx.navigation.NavController
+import com.neu.classmate.Routes
 
 @Composable
 fun SignupScreen(navController: NavController){
@@ -98,5 +100,10 @@ fun SignupScreen(navController: NavController){
             modifier = Modifier.fillMaxWidth().height(45.dp)) {
             Text("Register")
         }
+
+        Spacer(modifier = Modifier.height(20.dp))
+
+        Text(text = "Already have an account?")
+        TextButton(onClick = {navController.navigate(Routes.LoginScreen)}) { Text("Sign in now")}
     }
 }
