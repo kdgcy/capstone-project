@@ -23,7 +23,7 @@ fun AppNavigations(){
         composable(Routes.SignupScreen){
             SignupScreen(navController)
         }
-        composable(Routes.HomseScreen){
+        composable(Routes.HomeScreen){
             HomeScreen(navController)
         }
     }
