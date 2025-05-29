@@ -118,7 +118,7 @@ fun AuthScreen(navController: NavController){
                     modifier = Modifier.size(24.dp)
                 )
                 Spacer(modifier = Modifier.width(8.dp))
-                Text(text = "Sign in with Google")
+                Text(text = "Google")
             }
         }
     }
