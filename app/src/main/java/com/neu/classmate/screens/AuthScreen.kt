@@ -13,6 +13,7 @@ import androidx.compose.foundation.layout.size
 import androidx.compose.foundation.layout.width
 import androidx.compose.material3.Button
 import androidx.compose.material3.Divider
+import androidx.compose.material3.HorizontalDivider
 import androidx.compose.material3.OutlinedButton
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
@@ -83,10 +84,10 @@ fun AuthScreen(navController: NavController){
                 .padding(vertical = 16.dp),
             verticalAlignment = Alignment.CenterVertically
         ) {
-            Divider(
+            HorizontalDivider(
                 modifier = Modifier.weight(1f),
-                color = Color.Gray,
-                thickness = 2.dp
+                thickness = 1.5.dp,
+                color = Color.Gray
             )
 
             Text(
@@ -96,10 +97,10 @@ fun AuthScreen(navController: NavController){
                 fontSize = 14.sp
             )
 
-            Divider(
+            HorizontalDivider(
                 modifier = Modifier.weight(1f),
-                color = Color.Gray,
-                thickness = 2.dp
+                thickness = 1.5.dp,
+                color = Color.Gray
             )
         }
 
@@ -113,12 +114,12 @@ fun AuthScreen(navController: NavController){
         ) {
             Row(verticalAlignment = Alignment.CenterVertically) {
                 Image(
-                    painter = painterResource(id = R.drawable.googlelogo), // Your logo file
+                    painter = painterResource(id = R.drawable.googlelogo), //logo file
                     contentDescription = "Google logo",
                     modifier = Modifier.size(24.dp)
                 )
                 Spacer(modifier = Modifier.width(8.dp))
-                Text(text = "Sign in with Google")
+                Text(text = "Google")
             }
         }
     }
